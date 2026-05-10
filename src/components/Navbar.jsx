@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import logo from '../assets/Tennis Four All Logo.png'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -17,11 +18,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl">🎾</span>
-            <span className="text-xl font-extrabold text-brand-green tracking-tight">
-              Tennis <span className="text-brand-yellow">Four</span> All
-            </span>
+          <a href="#" className="flex items-center">
+            <img src={logo} alt="Tennis Four All" className="h-12 w-auto" />
           </a>
 
           {/* Desktop nav */}
